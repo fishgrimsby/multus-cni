@@ -1,5 +1,5 @@
 name: Image build
-on: [pull_request]
+on: [push, pull_request]
 jobs:
   build-thin:
     name: Image build thin plugin
