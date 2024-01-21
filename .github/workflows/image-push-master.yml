@@ -4,7 +4,7 @@ on:
     branches:
       - master
 env:
-  image-push-owner: 'k8snetworkplumbingwg'
+  image-push-owner: 'fishgrimsby'
 jobs:
   push-thick:
     name: Image push thick image
