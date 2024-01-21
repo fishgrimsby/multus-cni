@@ -6,7 +6,7 @@ on:
 env:
   image-push-owner: 'k8snetworkplumbingwg'
 jobs:
-  push-thick-amd64:
+  push-thick:
     name: Image push thick image
     runs-on: ubuntu-latest
     steps:
