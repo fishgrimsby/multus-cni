@@ -1,5 +1,5 @@
 name: Image build
-on: [push, pull_request]
+on: [pull_request]
 jobs:
   build-thin:
     name: Image build thin plugin
@@ -51,7 +51,7 @@ jobs:
           context: .
           push: false
           tags: ghcr.io/${{ github.repository }}:latest-thick
-          platforms: linux/amd64,linux/arm64
+          platforms: linux/amd64,linux/arm64,linux/arm/v7,linux/ppc64le,linux/s390x
           file: images/Dockerfile.thick
 
   build-origin:

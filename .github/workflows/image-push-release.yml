@@ -42,7 +42,7 @@ jobs:
             ghcr.io/${{ github.repository }}:stable-thick
             ${{ steps.docker_meta.outputs.tags }}-thick
           file: images/Dockerfile.thick
-          platforms: linux/amd64,linux/arm64
+          platforms: linux/amd64,linux/arm64,linux/arm/v7,linux/ppc64le,linux/s390x
 
   push-thin:
     name: Image push thin image/amd64
