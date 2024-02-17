@@ -45,7 +45,7 @@ jobs:
           platforms: linux/amd64,linux/arm64,linux/arm/v7,linux/ppc64le,linux/s390x
 
   push-thin:
-    name: Image push thin image
+    name: Image push thin image/amd64
     runs-on: ubuntu-latest
     steps:
       - name: Check out code into the Go module directory
