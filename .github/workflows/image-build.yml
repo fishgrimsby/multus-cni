@@ -36,7 +36,7 @@ jobs:
           provenance: false
 
   build-thick:
-    name: Image build thick plugin
+    name: Image thick plugin
     runs-on: ubuntu-latest
     steps:
       - name: Check out code into the Go module directory
@@ -52,7 +52,9 @@ jobs:
           push: false
           tags: ghcr.io/${{ github.repository }}:latest-thick
           file: images/Dockerfile.thick
-          platforms: linux/amd64,linux/arm64,linux/arm/v7,linux/ppc64le,linux/s390x
+          platforms: linux/amd64,linux/arm64,linux/arm/v7,linux/arm/v8,linux/ppc64le,linux/s390x
+          sbom: false
+          provenance: false
 
   build-origin:
     name: Image build/origin
