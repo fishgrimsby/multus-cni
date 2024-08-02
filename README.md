@@ -1,5 +1,5 @@
-> [!NOTE]  
-> This fork provides arm64 and other architecture builds for [multus-cni thick plugin](deployments/multus-daemonset-thick.yml) as the official repo only builds for amd64.
+> [!NOTE] 
+> This fork provided arm64 and other architecture images for the [multus-cni thick plugin](deployments/multus-daemonset-thick.yml) when the official repository only provided images for the amd64 architecture. Now that the official repository includes builds for other architectures, use of the images from this fork are no longer necessary unless you need an arm64 or other architecture image for [v4.0.2](https://github.com/fishgrimsby/multus-cni/blob/v4.0.2/deployments/multus-daemonset-thick.yml).
 
 # Multus-CNI
 
